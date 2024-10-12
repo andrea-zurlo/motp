@@ -10,7 +10,7 @@
 
 <div>Website visit count:</div>
 <div class="website-counter"></div>
-<button id="reset">Reset</button>
+<!-- <button id="reset">Reset</button> -->
 
 <script type="text/javascript">
     var counterContainer = document.querySelector(".website-counter");
