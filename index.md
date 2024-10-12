@@ -1,12 +1,35 @@
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
-      tex2jax: {
+    tex2jax: {
         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
         inlineMath: [['$','$']]
-      }
+    }
     });
-  </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script>
+    var n = localStorage.getItem('on_load_counter');
+
+    if (n === null) {
+        n = 0;
+    }
+
+    n++;
+
+    localStorage.setItem("on_load_counter", n);
+
+    document.getElementById('CounterVisitor').innerHTML = n;
+</script>
+
+<div id="CounterVisitor">
+          <span class="counter-item">0</span>
+          <span class="counter-item">0</span>
+          <span class="counter-item">1</span>
+          <span class="counter-item">1</span>
+          <span class="counter-item">8</span>
+          <span class="counter-item">4</span>
+</div>
 
 # Exercises – Models of Theoretical Physics
 
@@ -36,15 +59,13 @@ Calculate the characteristic function of $p(x)$.
 
 $$ \int_{a}^{b} p(x)dx = \int_{a}^{b} \frac{dx}{b-a} = \frac{x}{b-a}\bigg\rvert_{a}^{b} = 1 $$
 
-We apply the definition of c.f.
+We apply the definition of characteristic functions
 
 $$ \varphi{(t)} \equiv \int_{a}^{b} e^{itx} p(x) dx = \int_{a}^{b} \frac{e^{itx}}{b-a} dx = \frac{e^{itx}}{it(b-a)}\bigg\rvert_{a}^{b} = \frac{e^{itb} - e^{ita}}{it(b-a)} $$
 
-By Taylor expansion we can show that $\varphi(0)=1$
+Thanks to l'Hopital's rule we can show that $\varphi(0)=1$
 
-$$ \lim_{t\to 0} \varphi(t) = \lim_{t\to 0} \frac{e^{itb} - e^{ita}}{it(b-a)} = \lim_{t\to 0} \frac{1 + itb + o(itb) - (1 + itb + o(itb) ) }{it(b-a)} = $$
-
-$$ = \lim_{t\to 0} \frac{itb - ita}{it(b-a)} = 1 $$
+$$ \lim_{t\to 0} \varphi(t) = \lim_{t\to 0} \frac{e^{itb} - e^{ita}}{it(b-a)} = \lim_{t\to 0} \frac{ibe^{itb} - iae^{ita} }{it(b-a)} = 1 $$
 
 ---
 ### 2. The gamma distribution
