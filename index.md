@@ -26,9 +26,9 @@
 
 ### 1. The uniform distribution
 
-> Let $x$ be a random variable drawn from $U([a,b])$, $a,b\in\mathbb{R}$, $b>a$. The pdf can be expressed as
-> $$ p(x)=\frac{1}{b-a} $$ 
-> Calculate the characteristic function of $p(x)$.
+Let $x$ be a random variable drawn from $U([a,b])$, $a,b\in\mathbb{R}$, $b>a$. The pdf can be expressed as
+$$ p(x)=\frac{1}{b-a} $$ 
+Calculate the characteristic function of $p(x)$.
  
 **Solution.** First we check the normalization
 
@@ -46,14 +46,14 @@ $$ = \lim_{t\to 0} \frac{itb - ita}{it(b-a)} = 1 $$
 ---
 ### 2. The gamma distribution
 
-> Let $x$ be a random variable drawn from a distribution
-> $$ q(x|\alpha,\beta) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x}, \qquad x\in[0,+\infty), \alpha, \beta\in\mathbb{R} $$
-> where
-> $$ \Gamma(z) = \int_0^{+\infty} t^{z-1} e^{-t} dt \qquad z\in\mathbb{R}, \mathcal{Re}(z)>0 $$
-> Requests:
-> 1. check that $q$ is properly normalized;
-> 2. calculate the characteristic function $\varphi(k)$ of $q$;
-> 3. check that $\varphi(0)=1$.
+Let $x$ be a random variable drawn from a distribution
+$$ q(x|\alpha,\beta) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x}, \qquad x\in[0,+\infty), \alpha, \beta\in\mathbb{R} $$
+where
+$$ \Gamma(z) = \int_0^{+\infty} t^{z-1} e^{-t} dt \qquad z\in\mathbb{R}, \mathcal{Re}(z)>0 $$
+Requests:
+1. check that $q$ is properly normalized;
+2. calculate the characteristic function $\varphi(k)$ of $q$;
+3. check that $\varphi(0)=1$.
 
 **Solution.** Considering the change of variable $\beta x = t$  
 
@@ -74,9 +74,9 @@ $$ \varphi(0) = \left(1 - i\frac{0}{\beta}\right)^{-\alpha} = 1 $$
 
 ### 3. Bivariate Gaussian and correlation functions
 
-> Consider the following bivariate Gaussian distribution
-> $$ p(x_1, x_2) = \exp{\left[-\frac{3}{2}(x_1^2 + x_2^2) + x_1 x_2 \right]} $$
-> find the symmetric matrix $A$ such that the exponent can be expressed as $-\frac{1}{2} \vec{x}^T A \vec{x}$. Compute the integral and the following correlation functions: $\langle x_1^2 \rangle, \langle x_1 x_2 \rangle$.
+Consider the following bivariate Gaussian distribution
+$$ p(x_1, x_2) = \exp{\left[-\frac{3}{2}(x_1^2 + x_2^2) + x_1 x_2 \right]} $$
+find the symmetric matrix $A$ such that the exponent can be expressed as $-\frac{1}{2} \vec{x}^T A \vec{x}$. Compute the integral and the following correlation functions: $\langle x_1^2 \rangle, \langle x_1 x_2 \rangle$.
 
 **Solution.** It is easy to see that
 $$ A = \begin{pmatrix} 
@@ -116,11 +116,11 @@ $$ \langle x_1^2 \rangle = \frac{3}{8} \qquad \qquad \langle x_1 x_2 \rangle = \
 ---
 ### 4. Bivariate Gaussian with marginalization
 
-> Consider the following bivariate Gaussian distribution
-> $$ p(x,y) = \frac{\sqrt{\det A}}{2\pi} \exp\left[ -\frac{1}{2} \left( a_{11}x^2 + 2a_{12}xy + a_{22}y^2 \right) \right] $$
-> where $a_{11},a_{22}>0, a_{12}=a_{21}$. Show that $p$ is normalized to 1 and that the marginalized distribution
-> $$ q(x) = \int_{\mathbb{R}} p(x,y)dy $$
-> is still a Gaussian pdf. Find the variance of the r.v. distributed as $q(x)$.
+Consider the following bivariate Gaussian distribution
+$$ p(x,y) = \frac{\sqrt{\det A}}{2\pi} \exp\left[ -\frac{1}{2} \left( a_{11}x^2 + 2a_{12}xy + a_{22}y^2 \right) \right] $$
+where $a_{11},a_{22}>0, a_{12}=a_{21}$. Show that $p$ is normalized to 1 and that the marginalized distribution
+$$ q(x) = \int_{\mathbb{R}} p(x,y)dy $$
+is still a Gaussian pdf. Find the variance of the r.v. distributed as $q(x)$.
 
 **Solution.** From the multivariate Gaussian integral
 
@@ -156,43 +156,43 @@ proving that it is still a Gaussian pdf.
 
 ### 5. Joint distribution of the sum
 
-> Calculate the distribution of $x=x_1 + x_2$ if $x_1, x_2$ are iid drawn from:
-> 1. a uniform distribution $\mathcal{U}([0,1])$;
-> 2. a Gaussian distribution $\mathcal{N}_x(\mu,\sigma)$;
-> 3. an exponential distribution $q(x) = \lambda e^{-\lambda x}$.
+Calculate the distribution of $x=x_1 + x_2$ if $x_1, x_2$ are iid drawn from:
+1. a uniform distribution $\mathcal{U}([0,1])$;
+2. a Gaussian distribution $\mathcal{N}_x(\mu,\sigma)$;
+3. an exponential distribution $q(x) = \lambda e^{-\lambda x}$.
 
 ---
 
 ### 6. Joint distribution of the product
 
-> Calculate the distribution of $x=x_1 x_2$ when $x_1$, $x_2$ are positive and iid.
+Calculate the distribution of $x=x_1 x_2$ when $x_1$, $x_2$ are positive and iid.
 
 ---
 
 ### 7. Sum of n indpendent random variables
 
-> Calculate the characteristic function of $x=x_1+x_2+\dots+x_n$ when $x_i$ are independent but not identically distributed.
+Calculate the characteristic function of $x=x_1+x_2+\dots+x_n$ when $x_i$ are independent but not identically distributed.
 
 ---
 
 ### 8. Central limit theorem
 
-> Show that
-> $$ \sum_{i=1}^{n} x_i \sim \mathcal{N}(n\mu, n\sigma^2); \qquad \frac{1}{n}\sum_{i=1}^{n} x_i \sim \mathcal{N} \left(\mu,\frac{\sigma^2}{n} \right) $$
+Show that
+$$ \sum_{i=1}^{n} x_i \sim \mathcal{N}(n\mu, n\sigma^2); \qquad \frac{1}{n}\sum_{i=1}^{n} x_i \sim \mathcal{N} \left(\mu,\frac{\sigma^2}{n} \right) $$
 
 ---
 
 ### 9. Laplace's method
 
-> Show that a better approximation of $I(\lambda)$ as $\lambda\to\infty$ is given by
-> $$ I(\lambda) = e^{\lambda f(x_0)} \sqrt{ \frac{2\pi}{\lambda\lvert{f''(x_0)}\rvert } } \left( g(x_0) + \frac{c}{\lambda} \right) $$
-> where $c$ is a constant that depends on the derivatives of $f(x)$ up to the 4th order (at $x=x_0$) and $g(x_0), g'(x_0)$.
+Show that a better approximation of $I(\lambda)$ as $\lambda\to\infty$ is given by
+$$ I(\lambda) = e^{\lambda f(x_0)} \sqrt{ \frac{2\pi}{\lambda\lvert{f''(x_0)}\rvert } } \left( g(x_0) + \frac{c}{\lambda} \right) $$
+where $c$ is a constant that depends on the derivatives of $f(x)$ up to the 4th order (at $x=x_0$) and $g(x_0), g'(x_0)$.
 
 ---
 
 ### 10. Laplace's method on modified Bessel function
 
-> Consider the modified Bessel function
-> $$ K_\nu(x) = \int_0^{\infty} e^{-x \cosh t} \cosh (\nu t) dt $$
-> show that
-> $$ K_\nu(x) \cong \sqrt{ \frac{\pi}{2x} } e^{-x} \left( 1 + \frac{c(\nu)}{x} + \dots \right), \qquad c(\nu) = \frac{2\nu^2 - 1}{8} $$
+Consider the modified Bessel function
+$$ K_\nu(x) = \int_0^{\infty} e^{-x \cosh t} \cosh (\nu t) dt $$
+show that
+$$ K_\nu(x) \cong \sqrt{ \frac{\pi}{2x} } e^{-x} \left( 1 + \frac{c(\nu)}{x} + \dots \right), \qquad c(\nu) = \frac{2\nu^2 - 1}{8} $$
