@@ -8,28 +8,6 @@
 </script>
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<script>
-    var n = localStorage.getItem('on_load_counter');
-
-    if (n === null) {
-        n = 0;
-    }
-
-    n++;
-
-    localStorage.setItem("on_load_counter", n);
-
-    document.getElementById('CounterVisitor').innerHTML = n;
-</script>
-
-<div id="CounterVisitor">
-          <span class="counter-item">0</span>
-          <span class="counter-item">0</span>
-          <span class="counter-item">1</span>
-          <span class="counter-item">1</span>
-          <span class="counter-item">8</span>
-          <span class="counter-item">4</span>
-</div>
 
 # Exercises – Models of Theoretical Physics
 
