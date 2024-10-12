@@ -43,6 +43,7 @@ $$ \varphi{(t)} \equiv \int_{a}^{b} e^{itx} p(x) dx = \int_{a}^{b} \frac{e^{itx}
 By Taylor expansion we can show that $\varphi(0)=1$
 
 $$ \lim_{t\to 0} \varphi(t) = \lim_{t\to 0} \frac{e^{itb} - e^{ita}}{it(b-a)} = \lim_{t\to 0} \frac{1 + itb + o(itb) - (1 + itb + o(itb) ) }{it(b-a)} = $$
+
 $$ = \lim_{t\to 0} \frac{itb - ita}{it(b-a)} = 1 $$
 
 ---
@@ -74,6 +75,7 @@ change of variable $\beta - ik = s$
 $$ \varphi(k) = \frac{\beta^{\alpha}}{\Gamma(\alpha)} \int_0^{+\infty} x^{\alpha - 1} e^{-s x} dx = \frac{\beta^{\alpha}}{\Gamma(\alpha)} \frac{\Gamma(\alpha)}{s^{\alpha}} = \frac{\beta^\alpha}{(\beta - ik)^\alpha} = \left(1 - i\frac{k}{\beta}\right)^{-\alpha} $$
 
 finally 
+
 $$ \varphi(0) = \left(1 - i\frac{0}{\beta}\right)^{-\alpha} = 1 $$
 
 ---
@@ -158,6 +160,7 @@ $$ q(x) = \int_{\mathbb{R}} p(x,y)\ dy = \frac{\sqrt{\det A}}{2\pi} e^{ -\frac{1
 here we can exploit the 1-dim Gaussian integral with $a=a_{22}$ and $b=-a_{12}x$, we get
 
 $$ q(x) = \frac{\sqrt{\det A}}{2\pi} e^{ -\frac{1}{2}a_{11} x^2} \sqrt{\frac{2\pi}{a_{22}}}\exp\left[\frac{(-a_{12}x)^2}{2a_{22}}\right] = $$
+
 $$ = \frac{1}{\sqrt{2\pi}} \sqrt{a_{11} - \frac{a_{12}^2}{a_{22}}}\exp\left[-\frac{1}{2} \left(a_{11} - \frac{a_{12}^2}{a_{22}} \right)x^2\right] = \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{x^2}{2\sigma^2}}$$
 
 where we have defined the variance of the marginalized distribution as
@@ -192,6 +195,7 @@ Calculate the characteristic function of $x=x_1+x_2+\dots+x_n$ when $x_i$ are in
 ### 8. Central limit theorem
 
 Show that
+
 $$ \sum_{i=1}^{n} x_i \sim \mathcal{N}(n\mu, n\sigma^2); \qquad \frac{1}{n}\sum_{i=1}^{n} x_i \sim \mathcal{N} \left(\mu,\frac{\sigma^2}{n} \right) $$
 
 ---
