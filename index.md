@@ -151,4 +151,4 @@ $$ \langle y_1 y_2 \rangle = \rho; \qquad \langle y_1^2 \rangle = \sigma_1^2, \l
 
 Show that at leading order 
 
-$$ \int_0^\infty e^{-\lambda t} e^{-1/t} dt = \frac{\sqrt{\pi}e^{-2\sqrt{\lambda}}}{\lambda^{3/4}} $$
+$$ \int_0^\infty e^{-\lambda t} e^{-1/t} dt = \frac{\sqrt{\pi}e^{-2\sqrt{\lambda}}}{\lambda^{3/4}} \qquad \text{as}\ \lambda \to \infty $$
