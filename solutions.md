@@ -177,6 +177,35 @@ Calculate the distribution of $x=x_1 + x_2$ if $x_1, x_2$ are iid drawn from:
 2. a Gaussian distribution $\mathcal{N}_x(\mu,\sigma)$;
 3. an exponential distribution $q(x) = \lambda e^{-\lambda x}$.
 
+**Solution.**
+
+1 – uniform distribution. The pdf can be expressed as
+
+$$ q(x_1) = \begin{cases}
+1, \quad 0\leq x_1 \leq 1 \\
+0, \quad \text{otherwise}
+\end{cases} $$
+
+First we notice that the sum $x=x_1 + x_2$ can fall in the interval $[0,2]$. Thanks to the convolution we have
+
+$$ p(x) = \int q(x-x_1)q(x_1)dx_1 $$
+
+we can think to the function $q(x-x_1)$ in a $x_1$-$y$ graph as the function $q(x_1)$, mirrored to the $y$-axis and shifted towards positive $x_1$ of an amount $x$. From the graph we can see that the integral is non-zero only when the two functions overlap, i.e. when $x$ goes from 0 to 2. When $x\in[0,1]$ the overlapping region increases, on the contrary when $x\in[1,2]$ the overlapping reagion decreases. The limits of integration are determined by $x$ (we can think to it as a parameter): for the first piece the integral ranges from 0 to $x$, for the second one it range from $x-1$ to 1. For this reason we split the integral in two parts
+
+$$ p(x) = \begin{cases}
+\int_0^x dx_1, \quad 0 \leq x \leq 1 \\
+\int_{x-1}^{1} dx_1, \quad 1< x \leq 2
+\end{cases}
+$$
+
+and we get a triangular (piecewise) function
+
+$$ p(x) = \begin{cases}
+x, \quad 0 \leq x \leq 1 \\
+2-x, \quad 1< x \leq 2
+\end{cases}
+$$
+
 ---
 
 ### 6. Joint distribution of the product

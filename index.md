@@ -22,6 +22,8 @@
     - [8. Central limit theorem](#8-central-limit-theorem)
     - [9. Laplace's method](#9-laplaces-method)
     - [10. Laplace's method on modified Bessel function](#10-laplaces-method-on-modified-bessel-function)
+    - [11. Correlation function](#11-correlation-function)
+    - [12. Stirling's formula](#12-stirlings-formula)
 
 ---
 
@@ -130,3 +132,23 @@ $$ K_\nu(x) = \int_0^{\infty} e^{-x \cosh t} \cosh (\nu t) dt $$
 show that
 
 $$ K_\nu(x) \cong \sqrt{ \frac{\pi}{2x} } e^{-x} \left( 1 + \frac{c(\nu)}{x} + \dots \right), \qquad c(\nu) = \frac{2\nu^2 - 1}{8} $$
+
+---
+
+### 11. Correlation function
+
+Let $x_1, x_2$ be two independent random variables with
+
+$$ \langle x_i \rangle = 0,\ \langle x_i^2 \rangle = 0 \qquad i=1,2; \qquad \langle x_1 x_2 \rangle = 0 \qquad \text{(uncorrelated)} $$
+
+Use $x_1, x_2$ to define two random variable $y_1, y_2$ that are correlated with
+
+$$ \langle y_1 y_2 \rangle = \rho; \qquad \langle y_1^2 \rangle = \sigma_1^2, \langle y_2^2 \rangle = \sigma_2^2 $$
+
+---
+
+### 12. Stirling's formula
+
+Show that at leading order 
+
+$$ \int_0^\infty e^{-\lambda t} e^{-1/t} dt = \frac{\sqrt{\pi}e^{-2\sqrt{\lambda}}}{\lambda^{3/4}} $$
