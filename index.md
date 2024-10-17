@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
     tex2jax: {
@@ -172,6 +175,11 @@ $$\begin{align*} \text{a)} &\quad \int_{-2}^{0} e^t e^{ \lambda (3t^3 + 2t^3)} d
 
 ## 14. Integral
 
+Consider the integral
+
+$$ G(\lambda) = \int_{x_1}^{x_2} g(t) e^{\lambda f(t)} dt $$
+
+where $f$ is smooth in $[x_1,x_2]$ and has the shape given by
 
 <script type="text/tikz">
 
@@ -208,4 +216,6 @@ $$\begin{align*} \text{a)} &\quad \int_{-2}^{0} e^t e^{ \lambda (3t^3 + 2t^3)} d
 
 \end{tikzpicture}
 </script>
+
+what is the leading behaviour of $G(\lambda)$ as $\lambda\to\infty$?
 
