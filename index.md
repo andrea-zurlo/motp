@@ -25,6 +25,7 @@
     - [11. Correlation function](#11-correlation-function)
     - [12. Stirling's formula](#12-stirlings-formula)
     - [13. Integrals](#13-integrals)
+  - [14. Integral](#14-integral)
 
 ---
 
@@ -166,3 +167,45 @@ $$\begin{align*} \text{a)} &\quad \int_{-2}^{0} e^t e^{ \lambda (3t^3 + 2t^3)} d
 \\
 \text{d)} &\quad \int_{-1}^{2} e^{ \lambda (t^3 - 1)}(1+t^2) dt \simeq \frac{5e^{6\lambda}}{11\lambda} 
 \end{align*}$$ 
+
+---
+
+## 14. Integral
+
+
+<script type="text/tikz">
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,238); %set diagram left start at 0, and has height of 238
+
+%Straight Lines [id:da23526362934300482] 
+\draw    (14.5,187) -- (278,187) ;
+\draw [shift={(280,187)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da507394361412951] 
+\draw    (34,213.5) -- (34,15.5) ;
+\draw [shift={(34,13.5)}, rotate = 90] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Curve Lines [id:da38177544585289147] 
+\draw [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,draw opacity=1 ][line width=1.5]    (49.5,212) .. controls (71.5,45.5) and (102,59.5) .. (136,124) .. controls (170,188.5) and (196.5,190) .. (220.5,14.5) ;
+%Straight Lines [id:da2561674175737174] 
+\draw    (16.5,78.5) -- (279.5,78.5) ;
+%Straight Lines [id:da45934936488879585] 
+\draw    (211,18.5) -- (211,213) ;
+%Straight Lines [id:da15160053107712046] 
+\draw    (61,18) -- (61,212.5) ;
+%Straight Lines [id:da7142987422529892] 
+\draw    (95.5,79) -- (95.5,186.5) ;
+
+% Text Node
+\draw (63,185.4) node [anchor=north west][inner sep=0.75pt]    {$x_{1}$};
+% Text Node
+\draw (213,186.4) node [anchor=north west][inner sep=0.75pt]    {$x_{2}$};
+% Text Node
+\draw (95,187.4) node [anchor=north west][inner sep=0.75pt]    {$x_{0}$};
+
+
+\end{tikzpicture}
+</script>
+
