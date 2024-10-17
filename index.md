@@ -24,6 +24,7 @@
     - [10. Laplace's method on modified Bessel function](#10-laplaces-method-on-modified-bessel-function)
     - [11. Correlation function](#11-correlation-function)
     - [12. Stirling's formula](#12-stirlings-formula)
+    - [13. Integrals](#13-integrals)
 
 ---
 
@@ -152,3 +153,16 @@ $$ \langle y_1 y_2 \rangle = \rho; \qquad \langle y_1^2 \rangle = \sigma_1^2, \l
 Show that at leading order 
 
 $$ \int_0^\infty e^{-\lambda t} e^{-1/t} dt = \frac{\sqrt{\pi}e^{-2\sqrt{\lambda}}}{\lambda^{3/4}} \qquad \text{as}\ \lambda \to \infty $$
+
+---
+
+### 13. Integrals
+
+$$\begin{align*} \text{a)} &\quad \int_{-2}^{0} e^t e^{ \lambda (3t^3 + 2t^3)} dt = e^{\lambda - 1} \sqrt{\frac{\pi}{3\lambda}} \\
+\\
+\text{b)} &\quad \int_{0}^{1} e^t e^{ \lambda (3t^3 + 2t^3)} dt \simeq \frac{e^{5\lambda + 1}}{12 \lambda} \\
+\\
+\text{c)} &\quad \int_{0}^{1} \sqrt{t+1} e^{\lambda(2t - t^2)} dt \simeq e^{\lambda - 1} \sqrt{\frac{\pi}{2\lambda}} \\
+\\
+\text{d)} &\quad \int_{-1}^{2} e^{ \lambda (t^3 - 1)}(1+t^2) dt \simeq \frac{5e^{6\lambda}}{11\lambda} 
+\end{align*}$$ 
