@@ -236,6 +236,10 @@ $$ I(\lambda) = e^{\lambda f(x_0)} \sqrt{ \frac{2\pi}{\lambda\lvert{f''(x_0)}\rv
 
 where $c$ is a constant that depends on the derivatives of $f(x)$ up to the 4th order (at $x=x_0$) and $g(x_0), g'(x_0)$.
 
+**Solution.**
+
+$$ c = -\frac{g''(x_0)}{2f''(x_0)} + \frac{g(x_0)f^{(4)}(x_0)}{8(f''(x_0))^2} + \frac{g'(x_0)f'''(x_0)}{2(f''(x_0))^2} - \frac{5}{24}\frac{(f'''(x_0))^2g(x_0)}{(f''(x_0))^3} $$
+
 ---
 
 ### 10. Laplace's method on modified Bessel function

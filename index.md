@@ -27,8 +27,9 @@
     - [10. Laplace's method on modified Bessel function](#10-laplaces-method-on-modified-bessel-function)
     - [11. Correlation function](#11-correlation-function)
     - [12. Stirling's formula](#12-stirlings-formula)
-    - [13. Integrals](#13-integrals)
-  - [14. Integral](#14-integral)
+    - [13. An integral related to the Stirling's formula](#13-an-integral-related-to-the-stirlings-formula)
+    - [14. Integrals](#14-integrals)
+  - [15. Integral](#15-integral)
 
 ---
 
@@ -154,13 +155,21 @@ $$ \langle y_1 y_2 \rangle = \rho; \qquad \langle y_1^2 \rangle = \sigma_1^2, \l
 
 ### 12. Stirling's formula
 
+Show that a better estimate of the Stirling's formula si given by
+
+$$ \lambda !\simeq \lambda^{\lambda+1}e^{-\lambda}\sqrt{\frac{2\pi}{\lambda}} \left( 1 + \frac{1}{12\lambda} \right) $$
+
+---
+
+### 13. An integral related to the Stirling's formula
+
 Show that at leading order 
 
 $$ \int_0^\infty e^{-\lambda t} e^{-1/t} dt = \frac{\sqrt{\pi}e^{-2\sqrt{\lambda}}}{\lambda^{3/4}} \qquad \text{as}\ \lambda \to \infty $$
 
 ---
 
-### 13. Integrals
+### 14. Integrals
 
 $$\begin{align*} \text{a)} &\quad \int_{-2}^{0} e^t e^{ \lambda (3t^3 + 2t^3)} dt = e^{\lambda - 1} \sqrt{\frac{\pi}{3\lambda}} \\
 \\
@@ -173,7 +182,7 @@ $$\begin{align*} \text{a)} &\quad \int_{-2}^{0} e^t e^{ \lambda (3t^3 + 2t^3)} d
 
 ---
 
-## 14. Integral
+## 15. Integral
 
 Consider the integral
 
