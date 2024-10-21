@@ -24,7 +24,7 @@
 
 $$ \tag{1} \int_{-\infty}^{+\infty} e^{-\frac{ax^2}{2}}dx = \sqrt{\frac{2\pi}{a}} \qquad a>0 $$
 
-$$ \tag{2-3} \int_{-\infty}^{+\infty} e^{-\frac{ax^2}{2}+bx}dx = \sqrt{\frac{2\pi}{a}}e^{\frac{b^2}{2a}} \qquad a>0, b\in\mathbb{{C}} $$
+$$ \tag{2-3} \int_{-\infty}^{+\infty} e^{-\frac{ax^2}{2}+bx}dx = \sqrt{\frac{2\pi}{a}}e^{\frac{b^2}{2a}} \qquad a>0, b\in\mathbb{C} $$
 
 <!-- 
 
