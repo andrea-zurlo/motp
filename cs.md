@@ -82,6 +82,8 @@ If the characteristic function of $q(x)$ is $\varphi_1(k)$, the characteristic f
 
 $$ \tag{16} \varphi(x) = \left[\varphi_1(k) \right]^2 $$
 
+
+
 ## 5. Laplace's method
 
 Let us consider integral of the following form
