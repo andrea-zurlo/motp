@@ -54,7 +54,7 @@ $$ \tag{7} \int_{-\infty}^{+\infty} x^n e^{-\frac{ax^2}{2}}\ dx = \frac{\sqrt{2\
 
 $$ \tag{8} Z(A) \equiv \int_{\mathbb{R}^n} \exp\left[{-\frac{1}{2}\vec{x}^T A \vec{x} } \right] dx^n = \frac{(2\pi)^{n/2}}{\sqrt{\det A}} $$
 
-$$ \tag{9-10} Z(A,\vec{b}) \equiv \int_{\mathbb{{R}^n}} \exp\left[{-\frac{1}{2}\vec{x}^T A \vec{x} + \vec{x}^T \vec{b}} \right] dx^n = \frac{(2\pi)^{n/2}}{\sqrt{\det A}}\exp\left( \frac{1}{2}\vec{b}^T A^{-1} \vec{b} \right) $$
+$$ \tag{9-10} Z(A,\vec{b}) \equiv \int_{\mathbb{R}^n} \exp\left[{-\frac{1}{2}\vec{x}^T A \vec{x} + \vec{x}^T \vec{b}} \right] dx^n = \frac{(2\pi)^{n/2}}{\sqrt{\det A}}\exp\left( \frac{1}{2}\vec{b}^T A^{-1} \vec{b} \right) $$
 
 Characteristic function of a multivariate Gaussian distribution
 
