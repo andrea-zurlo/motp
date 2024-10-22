@@ -86,13 +86,17 @@ If we are given a $n$ iid r.v. whose pdf is $q(x)$ with characteristic function 
 
 $$ \tag{17} \varphi(k) = \left[ \varphi_1\left(\frac{k}{n}\right) \right]^n $$
 
+The (strong) law of large number. Let $x_1,\dots,x_n$ be a sequence of iid rv each with finite mean $\mu$. Then the finite (empirical) average approaches $\mu$ as $n\to\infty$.
+
+$$ \tag{18} \frac{1}{n}\sum_{i=1}^{n} x_i \to \mu \qquad n\to\infty $$
+
 Let $x_1, \dots, x_n$ be a sequence of iid r.v. with finite mean $\mu$ and finite, non-zero variance $\sigma^2$, the following sequence converge in distribution to a Gaussian with mean 0 and variance 1
 
 $$ \tag{19} Y_n \equiv \frac{\sum_{i=0}^{n} x_i -\mu n}{\sigma \sqrt{n}} \sim \mathcal{N}_x(0,1) \qquad n\to\infty $$
 
 The characteristic function is
 
-$$ \tag{20} \varphi(k) = \langle e^{ikY_n} \rangle = e^{-\frac{ik\mu\sqrt{n}}{\sigma}} \left[ \int e^{i\frac{k}{\sqrt{n}\sigma}x} q(x)\ dx \right]^n = e^{-\frac{k^2}{2}}$$
+$$ \tag{20} \varphi(k) = \langle e^{ikY_n} \rangle = e^{-\frac{ik\mu\sqrt{n}}{\sigma}} \left[ \int e^{i\frac{k}{\sqrt{n}\sigma}x} q(x)\ dx \right]^n = e^{-\frac{k^2}{2}} \qquad n\to\infty $$
 
 ## 5. Laplace's method
 
