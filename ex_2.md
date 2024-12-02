@@ -155,7 +155,7 @@ Define the following stochastic process
 
 $$ V(t) = e^{-t} B(e^{2t}) $$
 
-where $B(t)$ is a Brownian motion. Show that $\mathbb{E}[V] = 0$, $\mathbb{E} = [V(t)V(s)] = e^{-|t-s|}$.
+where $B(t)$ is a Brownian motion. Show that $\mathbb{E}[V] = 0$, $\mathbb{E}[V(t)V(s)] = e^{-\lvert t-s\rvert }$.
 
 ---
 
