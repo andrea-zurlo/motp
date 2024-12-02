@@ -155,7 +155,7 @@ Define the following stochastic process
 
 $$ V(t) = e^{-t} B(e^{2t}) $$
 
-where $B(t)$ is a Brownian motion. Show that $\mathbb{E}[V] = 0, \mathbb{E} = [V(t)V(s)] = e^{-|t-s|}$.
+where $B(t)$ is a Brownian motion. Show that $\mathbb{E}[V] = 0$, $\mathbb{E} = [V(t)V(s)] = e^{-|t-s|}$.
 
 ---
 
@@ -214,6 +214,7 @@ Consider The Poisson process defined by the propagator
 $$ p_{1|1} = (x_2,t_2|n_1,t_1) = \frac{ (t_2-t_1)^{n_2 - n_1} }{(n_2 - n_1)!} e^{-(t_2 - t_1)} \qquad t_2 > t_1 $$
 
 show that if $p_1(n,0) = \delta_{n,0}$ then 
+
 $$ p_1(n,t) = \frac{t^n}{n!}e^{-t} $$
 
 ---
