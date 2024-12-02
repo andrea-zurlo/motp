@@ -165,7 +165,7 @@ Define the following stochastic process
 
 $$ V(t) = T B(t) - t B(t)\qquad t\in[0,T] $$
 
-where $B(t)$ is a Brownian motion. Show that $\mathbb{E}[V] = 0$, $\mathbb{E}[V(t)V(s)] = T^2\min(t,s) - T ts$, $t,s\in[0,T]$.
+where $B(t)$ is a Brownian motion. Show that $\mathbb{E}[V] = 0$, $\mathbb{E}[V(t)V(s)] = T^2 \min (t,s) - T ts$ for $t,s \in [0,T]$.
 
 ---
 
