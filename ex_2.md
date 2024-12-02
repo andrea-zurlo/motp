@@ -14,18 +14,17 @@
 # Exercises – Models of Theoretical Physics
 
 - [Exercises – Models of Theoretical Physics](#exercises--models-of-theoretical-physics)
-  - [1. Reaction-diffusion](#1-reaction-diffusion)
+  - [1. Reaction-diffusion – random walk](#1-reaction-diffusion--random-walk)
     - [1. Reaction-diffusion boundary conditions](#1-reaction-diffusion-boundary-conditions)
-  - [2. Random walk](#2-random-walk)
-    - [1. Generating function for the random walk](#1-generating-function-for-the-random-walk)
-    - [2. Turing pattern](#2-turing-pattern)
-    - [3. Random walk solution](#3-random-walk-solution)
-    - [4. Random walk average and variance from the solution](#4-random-walk-average-and-variance-from-the-solution)
-    - [5. Fundamental solution](#5-fundamental-solution)
-    - [6. Average and variance](#6-average-and-variance)
-    - [7. More random walk](#7-more-random-walk)
-    - [8. Diffusion equation with absorbing boundary conditions](#8-diffusion-equation-with-absorbing-boundary-conditions)
-    - [9. Diffusion equation with reflection boundary conditions](#9-diffusion-equation-with-reflection-boundary-conditions)
+    - [2. Generating function for the random walk](#2-generating-function-for-the-random-walk)
+    - [3. Turing pattern](#3-turing-pattern)
+    - [4. Random walk solution](#4-random-walk-solution)
+    - [5. Random walk average and variance from the solution](#5-random-walk-average-and-variance-from-the-solution)
+    - [6. Fundamental solution](#6-fundamental-solution)
+    - [7. Average and variance](#7-average-and-variance)
+    - [8. More random walk](#8-more-random-walk)
+    - [9. Diffusion equation with absorbing boundary conditions](#9-diffusion-equation-with-absorbing-boundary-conditions)
+    - [10. Diffusion equation with reflection boundary conditions](#10-diffusion-equation-with-reflection-boundary-conditions)
   - [3. Stochastic processes](#3-stochastic-processes)
     - [1. Ornstein-Uhlenbeck process](#1-ornstein-uhlenbeck-process)
     - [2. Brownian bridge](#2-brownian-bridge)
@@ -40,7 +39,7 @@
 
 ---
 
-## 1. Reaction-diffusion
+## 1. Reaction-diffusion – random walk
 
 ### 1. Reaction-diffusion boundary conditions
 
@@ -58,15 +57,13 @@ ii) periodic boundary conditions
 
 $$ \frac{\partial u}{\partial t}\bigg|_{x=0} = \frac{\partial u}{\partial t}\bigg|_{x=L} $$
 
-## 2. Random walk
-
-### 1. Generating function for the random walk
+### 2. Generating function for the random walk
 
 Determine an expression for the generating function for the random walk when the initial site is a generic site $i=i_0$ different from $i=0$.
 
 ---
 
-### 2. Turing pattern
+### 3. Turing pattern
 
 Determine the conditions for the diffusion driven instability (i.e. Turing patterns) for the Activator-Substrate Deplition model near the steady-state $(u_0,v_0)=(1,1)$.
 
@@ -82,13 +79,13 @@ U &\xrightarrow{\gamma} \emptyset \\
 
 ---
 
-### 3. Random walk solution
+### 4. Random walk solution
 
 For the random walk find the solution $w_i(k)$ for $w_i(0)=\delta_{i,i_0}$ and then possibly for a generic initial condition $w_i(0)=g_i$.
 
 ---
 
-### 4. Random walk average and variance from the solution
+### 5. Random walk average and variance from the solution
 
 For the random walk with $w_i(0)=\delta_{i,i_0}$ calculate $\mu(k)$ and $\sigma^2(k)$ by using the explicit solution
 
@@ -101,7 +98,7 @@ $$
 
 ---
 
-### 5. Fundamental solution
+### 6. Fundamental solution
 
 Show that the fundamental solution of $\partial_t w(x,t) = -v \partial_x w(x,t) + \frac{D}{2} \partial_x^2 w(x,t)$ is given by
 
@@ -109,19 +106,19 @@ $$ w_v(x,t) = \frac{1}{\sqrt{2\pi Dt}}\exp{\left[- \frac{(y-x-vt)^2}{2Dt} \right
 
 ---
 
-### 6. Average and variance
+### 7. Average and variance
 
 Consider the previous exercise. Show that $\langle x(t) \rangle = y + v t, v\in\mathbb{R}$ and calculate the variance at time $t$: $\sigma^(t)=\langle x^2(t) \rangle - \langle x(t) \rangle^2$ and show that it scales linearly with time (like in the discrete case).
 
 ---
 
-### 7. More random walk
+### 8. More random walk
 
 Repeat all the calculations of the simple random walk with more then 2 steps (master equation, mean, variance, etc.).
 
 ---
 
-### 8. Diffusion equation with absorbing boundary conditions
+### 9. Diffusion equation with absorbing boundary conditions
 
 Solve the following problem with Fourier series
 
@@ -135,7 +132,7 @@ $$
 
 ---
 
-### 9. Diffusion equation with reflection boundary conditions
+### 10. Diffusion equation with reflection boundary conditions
 
 Solve the following problem with the euristic method
 
