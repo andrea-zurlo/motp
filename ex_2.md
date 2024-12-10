@@ -24,7 +24,7 @@
     - [7. Average and variance](#7-average-and-variance)
     - [8. More random walk](#8-more-random-walk)
     - [9. Diffusion equation with absorbing boundary conditions](#9-diffusion-equation-with-absorbing-boundary-conditions)
-    - [10. Diffusion equation with reflection boundary conditions](#10-diffusion-equation-with-reflection-boundary-conditions)
+    - [10. Diffusion equation with reflecting boundary conditions](#10-diffusion-equation-with-reflecting-boundary-conditions)
   - [3. Stochastic processes](#3-stochastic-processes)
     - [1. Ornstein-Uhlenbeck process](#1-ornstein-uhlenbeck-process)
     - [2. Brownian bridge](#2-brownian-bridge)
@@ -33,9 +33,14 @@
     - [5. Rescaling](#5-rescaling)
     - [6. Inversion](#6-inversion)
     - [7. Time reversal](#7-time-reversal)
+    - [8. The Brownian motion is a Markov process](#8-the-brownian-motion-is-a-markov-process)
+    - [9. The Brownian motion is a non-stationary Markov process](#9-the-brownian-motion-is-a-non-stationary-markov-process)
     - [8. Poisson process](#8-poisson-process)
-    - [9. see notes](#9-see-notes)
+    - [9. Chapman-Kolmogorov](#9-chapman-kolmogorov)
     - [10. Ornstein-Uhlenbeck process](#10-ornstein-uhlenbeck-process)
+    - [11. Two-point correlation function](#11-two-point-correlation-function)
+    - [12. Functional moment generating function](#12-functional-moment-generating-function)
+    - [13. More on functionals](#13-more-on-functionals)
 
 ---
 
@@ -132,7 +137,7 @@ $$
 
 ---
 
-### 10. Diffusion equation with reflection boundary conditions
+### 10. Diffusion equation with reflecting boundary conditions
 
 Solve the following problem with the euristic method
 
@@ -204,19 +209,53 @@ Define $Z(t) = B(t) - B(T - t)$ for $t\in[0,T]$ and show that $Z$ and $B$ have t
 
 ---
 
-### 8. Poisson process
+### 8. The Brownian motion is a Markov process
 
-Consider The Poisson process defined by the propagator
+Consider the propagator of the Brownian motion
 
-$$ p_{1|1} = (x_2,t_2|n_1,t_1) = \frac{ (t_2-t_1)^{n_2 - n_1} }{(n_2 - n_1)!} e^{-(t_2 - t_1)} \qquad t_2 > t_1 $$
+$$ p_{1|1}(x_1t_1|x_0t_0) = w(x_1t_1|x_0t_0) = \frac{1}{2\pi(t_1 - t_0)}e^{-\frac{(x_1 - x_0)^2}{2(t_1 - t_0)}} $$
 
-show that if $p_1(n,0) = \delta_{n,0}$ then 
+show that the Brownian motion is a Markov process by checking that it satisfies the Chapman-Kolmogorov equation (CK1)
 
-$$ p_1(n,t) = \frac{t^n}{n!}e^{-t} $$
+$$ p_{1|1}(x_2t_2|x_0t_0) = \int dx_1 p_{1|1}(x_2t_2|x_1t_1)p_{1|1}(x_1t_1|x_0t_0) $$ 
 
 ---
 
-### 9. see notes
+### 9. The Brownian motion is a non-stationary Markov process
+
+Consider the previous exercice. Show that if you take $p_1(y_1,t_1=0)=\delta(y_1)$ the CK2 equation
+
+$$ p_1(x_2t_2) = \int dx_1 p_{1|1}(x_2t_2|x_1t_1)p_1(x_1t_1) $$
+
+gives
+
+$$ p_1(y_2,t_2) = \frac{1}{\sqrt{2\pi t_2}} e^{-y_2^2/2t_2} $$
+
+This generates a non-stationary Markov process.
+
+---
+
+### 8. Poisson process
+
+Show that the Poisson process
+
+$$ p_{1|1} = (x_2,t_2|n_1,t_1) = \frac{ (t_2-t_1)^{n_2 - n_1} }{(n_2 - n_1)!} e^{-(t_2 - t_1)} \qquad t_2 > t_1 $$
+
+$$ p_1(n,0)=\delta_{n,0} \qquad\Rightarrow\qquad p_1(n,t) = \frac{t^n}{n!}e^{-t}$$
+
+is a non-stationary Markov process.
+
+---
+
+### 9. Chapman-Kolmogorov
+
+Show that for $x,y=\pm 1$ the function
+
+$$ p_{1|1}(xt|yt') = \frac{1}{2}\left[ 1 + e^{-2\gamma(t-t')} \right]\delta_{x,y} + \frac{1}{2}\left[ 1 - e^{-2\gamma(t-t')} \right]\delta_{x,-y} $$
+
+satisfies the Chapman-Kolmogorov equation (CK1)
+
+$$ p_{1|1}(x_2t_2|x_0t_0) = \int dx_1 p_{1|1}(x_2t_2|x_1t_1)p_{1|1}(x_1t_1|x_0t_0) $$  
 
 ---
 
@@ -224,10 +263,38 @@ $$ p_1(n,t) = \frac{t^n}{n!}e^{-t} $$
 
 Show that the OU process defined by the propagator
 
-$$ p_{1|1}(x,t|y,t') = \frac{1}{2\pi (1 - e^{-2|t-t'|})} \exp \left[ - \frac{x - y e^{-|t-'t|}}{ 2(1 - e^{-2|t-t'|}) } \right] $$
+$$ p_{1|1}(x,t|y,t') = \frac{1}{2\pi (1 - e^{-2|t-t'|})} \exp \left[ - \frac{(x - y e^{-|t-'t|})^2}{ 2(1 - e^{-2|t-t'|}) } \right] $$
 
-(the stationary process of this is a Gaussian distribution) and the distribution
+and the distribution
 
 $$ p_{1}(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2} $$
 
-is a stationary Markov process.
+is a stationary Markov process. (The stationary process of this is a Gaussian distribution) 
+
+---
+
+### 11. Two-point correlation function
+
+Show that the 2-point correlation function of the Brownian motion $x(t)$ is
+
+$$ \langle x(t_1) x(t_2) \rangle = x_0^2 + Dt_1\wedge t_2 \qquad \text{for }\ t_0<t_1<t_2,\ x(t_0)=x_0 $$
+
+by means of the Wiener measure
+
+$$ d\mathbb{P}_{t_1\dots t_n}(x_1,\dots,x_n|x_0t_0) = \Pi_i = w(x_it_i|x_0t_0)dx_1 $$
+
+---
+
+### 12. Functional moment generating function
+
+Show that if $F(z)=e^{hz}$ we can obtain the moment generating function of $\int_0^T a(t)x(t)dt $ with the following
+
+$$ \langle e^{\int_0^T a(t)x(t)dt} \rangle_{B.m.} = e^{\frac{D}{2}R(T)h^2} $$
+
+---
+
+### 13. More on functionals
+
+Let $F(z)=e^z$ and $a(s) = h_1\delta(t_1 - s) + h_2\delta(t_2-s)$, $0<t_1,t_2<T$. Calculate $A(s)$, $R(T)$, $\int_0^T a(s)x(s)ds$, $Z(h_1h_2)$ and
+
+$$ \frac{\partial^2 Z}{\partial h_1 \partial h_2}\bigg|_{h_1=h_2=0} = \langle x(t_1) x(t_2) \rangle_{B.m.} = D t_1\wedge t_2  $$
