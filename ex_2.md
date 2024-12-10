@@ -35,12 +35,12 @@
     - [7. Time reversal](#7-time-reversal)
     - [8. The Brownian motion is a Markov process](#8-the-brownian-motion-is-a-markov-process)
     - [9. The Brownian motion is a non-stationary Markov process](#9-the-brownian-motion-is-a-non-stationary-markov-process)
-    - [8. Poisson process](#8-poisson-process)
-    - [9. Chapman-Kolmogorov](#9-chapman-kolmogorov)
-    - [10. Ornstein-Uhlenbeck process](#10-ornstein-uhlenbeck-process)
-    - [11. Two-point correlation function](#11-two-point-correlation-function)
-    - [12. Functional moment generating function](#12-functional-moment-generating-function)
-    - [13. More on functionals](#13-more-on-functionals)
+    - [10. Poisson process](#10-poisson-process)
+    - [11. Chapman-Kolmogorov](#11-chapman-kolmogorov)
+    - [12. Ornstein-Uhlenbeck process](#12-ornstein-uhlenbeck-process)
+    - [13. Two-point correlation function](#13-two-point-correlation-function)
+    - [14. Functional moment generating function](#14-functional-moment-generating-function)
+    - [15. More on functionals](#15-more-on-functionals)
 
 ---
 
@@ -235,7 +235,7 @@ This generates a non-stationary Markov process.
 
 ---
 
-### 8. Poisson process
+### 10. Poisson process
 
 Show that the Poisson process
 
@@ -247,7 +247,7 @@ is a non-stationary Markov process.
 
 ---
 
-### 9. Chapman-Kolmogorov
+### 11. Chapman-Kolmogorov
 
 Show that for $x,y=\pm 1$ the function
 
@@ -259,7 +259,7 @@ $$ p_{1|1}(x_2t_2|x_0t_0) = \int dx_1 p_{1|1}(x_2t_2|x_1t_1)p_{1|1}(x_1t_1|x_0t_
 
 ---
 
-### 10. Ornstein-Uhlenbeck process
+### 12. Ornstein-Uhlenbeck process
 
 Show that the OU process defined by the propagator
 
@@ -273,7 +273,7 @@ is a stationary Markov process. (The stationary process of this is a Gaussian di
 
 ---
 
-### 11. Two-point correlation function
+### 13. Two-point correlation function
 
 Show that the 2-point correlation function of the Brownian motion $x(t)$ is
 
@@ -285,7 +285,7 @@ $$ d\mathbb{P}_{t_1\dots t_n}(x_1,\dots,x_n|x_0t_0) = \Pi_i = w(x_it_i|x_0t_0)dx
 
 ---
 
-### 12. Functional moment generating function
+### 14. Functional moment generating function
 
 Show that if $F(z)=e^{hz}$ we can obtain the moment generating function of $\int_0^T a(t)x(t)dt $ with the following
 
@@ -293,7 +293,7 @@ $$ \langle e^{\int_0^T a(t)x(t)dt} \rangle_{B.m.} = e^{\frac{D}{2}R(T)h^2} $$
 
 ---
 
-### 13. More on functionals
+### 15. More on functionals
 
 Let $F(z)=e^z$ and $a(s) = h_1\delta(t_1 - s) + h_2\delta(t_2-s)$, $0<t_1,t_2<T$. Calculate $A(s)$, $R(T)$, $\int_0^T a(s)x(s)ds$, $Z(h_1h_2)$ and
 
