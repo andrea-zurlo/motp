@@ -17,3 +17,5 @@
 [First part](./ex_1.md)
 
 [Second part](./ex_2.md)
+
+[Second part](./ex_3.md)
